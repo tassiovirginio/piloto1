@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Piloto</title>
+</head>
+
+<body>
+  <table style="border: 1px; width: 100%;">
+    <tr style="background-color: azure;">
+      <td colspan="2" style="width: 100%; height: 100px;">
+        <p>
+          Olá,
+        </p>
+        <p>
+          Obrigado por aceitar a participar desse estudo, o objetivo é encontrar test smells nos métodos de teste nos
+          arquivos que estão à esquerda da tela, e colocar os resultados na planilha que está à direita.
+        </p>
+
+        <p>
+          Para entender como detectar os test smells,
+          você pode acessar o arquivo <a href="https://drive.google.com/file/d/1AQTqNApjayTZyf3gFvgN-XqYuTYd3WZ2/view?usp=sharing" target="_blank">TUTORIAL</a>,
+          que contém a descrição de cada test smell e um exemplo na linguagem Dart.
+        </p>
+
+        <p>
+          Peço que leia atentamente o tutorial antes de começar a análise. E se tiver alguma dúvida, pode consultar o
+          Tutorial ou me chamar.
+        </p>
+
+        <p>
+          Após ler o manual, selecione uma função de teste e comece a análise. Para cada Test Smell encontrado adicione
+          uma linha na planilha,
+          identificando o Nome do arquivo que vc esta analisando, o nome da Função/Teste, a linha que encontrou e o Tipo
+          de Test Smell.
+        </p>
+        <p>
+          Só precisa analisar uma função/teste por arquivo, assim que terminar uma análise de método vá para o outro arquivo
+          atráves dos links e inicie uma nova análise.
+        </p>
+
+        <p>
+          Ao terminar, me avise.
+        </p>
+
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="width: 100%; height: 50px;">
+        Arquivos:
+        <a href="#" onclick="changeIframeSrc('https://codeshare.io/yNp8do','Pairwise_Test_')">Pairwise_Test</a>
+         -
+        <a href="#" onclick="changeIframeSrc('https://codeshare.io/ZLpr3o','Scrollable_Test_')">Scrollable_Test</a>
+         -
+        <a href="#" onclick="changeIframeSrc('https://codeshare.io/VNpB8O','V1_Test_')">V1_Test</a>
+      </td>
+    </tr>
+    <tr style="background-color: black; color: white;">
+      <td id="file_name" colspan="2">Pairwise_Test</td>
+    </tr>
+    <tr style="background-color: aliceblue; width: 100%;">
+      <td style="width: 60%;">
+        <div style="background:none; border:none; resize:none; outline:none; width:100%;">
+          <iframe id="myIframe" src="https://codeshare.io/yNp8do" width="100%" height="600px"></iframe>
+        </div>
+      </td>
+      <td style="width: 40%;">
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/1jUlwgzv6YFz0wlOS0iQly3PMqU9D6xiv0x9sQwLQcCs/edit?usp=sharing"
+          width="100%" height="600px"></iframe>
+      </td>
+    </tr>
+  </table>
+
+
+  <script>
+    function changeIframeSrc(newSrc, name) {
+        document.getElementById('myIframe').src = newSrc;
+        document.getElementById('file_name').innerHTML = name;
+    }
+</script>
+</body>
+
+</html>
